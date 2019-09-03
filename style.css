@@ -1,5 +1,89 @@
+body {
+  font-family: 'Manjari', sans-serif;
+}
+
+.header {
+ margin: 20px;
+}
+
+.header h1 {
+  font-family: 'Manjari', sans-serif;
+}
+
 .header img {
-  border-radius: 50%;
+  border-radius: 100%;
+}
+
+.header h4 {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 2px;
+}
+
+:focus {
+  outline: none !important;
+}
+
+
+[role="tablist"] {
+  margin-bottom: 20px;
+}
+
+.nyc {
+  min-height: 500px;
+  width: 100%;
+  height: 100%;
+  background: url("https://images.unsplash.com/photo-1506598417715-e3c191368ac0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.hobbies {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hobbies li {
+  padding-left: 1rem;
+  text-indent: -0.7rem;
+}
+
+.hobbies li:nth-child(n+1)::before {
+  content: "✏️ ";
+}
+
+.hobbies li:nth-child(n+2)::before {
+  content: "🛠 ";
+}
+
+.hobbies li:nth-child(n+3)::before {
+  content: "🌍 ";
+}
+
+.hobbies li:nth-child(n+4)::before {
+  content: "🏃‍♂️ ";
+}
+
+.hobbies li:nth-child(n+5)::before {
+  content: "📕 ";
+}
+
+.footer {
+  margin-top: 20px;
+  height: 50px;
+  text-align: center;
+}
+
+[role="tab"] {
+  font-family: 'Manjari', sans-serif;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 /* 
