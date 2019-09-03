@@ -86,6 +86,10 @@ a:hover {
   font-weight: bold;
 }
 
+.card {
+  margin-bottom: 10px;
+}
+
 /* 
 The list (<ul></ul>) has the [role="tablist"] attribute.
 Tab links (<a href="#anchor"></a>) have the [role="tab"] attribute.
