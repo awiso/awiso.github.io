@@ -4,91 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Alex W.</title>
+
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./tabby-ui.min.css">
+  <link rel="stylesheet" href="./style.css">
+
+  <script src="./tabby.polyfills.min.js"></script>
+  <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
+  <title>Alex W.</title>
 </head>
-<style>
-  .card {
-    margin: 0 auto;
-    float: none;
-    margin-bottom: 10px;
-  }
-  .jumbotron {
-    background-image: linear-gradient(#0202025e, #0202025e, transparent), url("./peter-fogden-Jx5IB1f5-4w-unsplash.jpg");
-    background-size: cover;
-  }
+<body>
   
-</style>
-<body style="background-color: rgba(245, 245, 245, 0.801)">
   <div class="container">
-    
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        
-        <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
-          <div class="col">
-            <img class="rounded-circle" src="./DSC_0871.jpg" alt="Alex Wisowaty headshot" width="200">
-          </div>
-          <div class="col text-right">
-            <h1 class="display-4">Alex Wisowaty</h1>
-            <h6>Tech | Cognitive Science | Product Development </h6>
-            <a class="badge badge-primary" href="https://github.com/awiso">GitHub</a>
-          </div>
-        </div>
-        
+    <div class="row header">
+      <div class="col">
+        <img src="./DSC_0871.jpg" alt="Alex Wisowaty headshot" height="150px" >
+      </div>
+      <div class="col">
+        <h1>Alex Wisowaty</h1>
+        <h3>Tech | Cognitive Science | Product Development</h3>
+      </div>
+      <div class="col">
+        <canvas class="zdog-canvas" width="240" height="240"></canvas>
       </div>
     </div>
-    <div class="row">
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Skills</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Ruby on Rails</li>
-            <li class="list-group-item">C and C++</li>
-            <li class="list-group-item">Python</li>
-            <li class="list-group-item">HTML / CSS / JavaScript</li>
-            <li class="list-group-item">Drupal CMS</li>
-            <li class="list-group-item">LaTeX</li>
-            <li class="list-group-item">German and English (Native), Spanish</li>
-            <li class="list-group-item">Public Speaking</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Experience</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Teaching Assistant <br> at Le Wagon</h6>
-            <p class="card-text">Chosen to return to the program as a TA to teach Ruby fundamentals, object- oriented programming, and ActiveRecord. Led students through daily coding challenges. Spent extra time with students who needed more reinforcement in the course’s ‘reboot’ days.</p>
-            <h6 class="card-subtitle mb-2 text-muted">Student Web Developer <br> at Yale Center for Bioethics</h6>
-            <p class="card-text">Refined UX and managed the content of the Center’s Drupal website. Improved the site’s accessibility according to Yale IT standard. Managed Center’s YouTube channel and captioned interviews.   </p>
-            <h6 class="card-subtitle mb-2 text-muted">Software Engineering Intern <br> at SWIPECAST</h6>
-            <p class="card-text">Collaborated on a connection recommendation engine alongside lead
-              developer. Wrote unit tests for new features in the Rails application (RSpec). Conducted market research into best online marketing venues for the
-              company.</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Education</h5>
-            <h6 class="card-subtitle mb-2 text-muted">B.A. Cognitive Science <br> Yale University</h6>
-            <p class="card-text">Area of Study: Computational Foundations of Cognition <br> Activities and Societies: Illustrator for Yale Herald, Club Climbing Team</p>
-            <h6 class="card-subtitle mb-2 text-muted">FullStack Web Developer Bootcamp <br> Le Wagon Berlin</h6>
-            <p class="card-text">Technologies: Ruby, Ruby on Rails, JavaScript, PostgreSQL, HTML, CSS, Heroku <br>Headed up development team at Le Wagon in summer 2018. As a group
-              of four we delivered Busk, a platform for public performers to gain a following and receive financial support. Personally presented this project on demo day.</p>
-            <h6 class="card-subtitle mb-2 text-muted">Semester Abroad <br> University of Applied Arts Vienna</h6>
-            <p class="card-text">Coursework: Artistic Anatomy, Gestaltungslehre, and 3D Rendering.</p>
-          </div>
-        </div>
-      </div>
-      
+
+    <ul data-tabs>
+      <li><a data-tabby-default href="#personal">Personal</a></li>
+      <li><a href="#professional">Professional</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+    </ul>
+    
+    <div id="personal">
+
+    </div>
+
+    <div id="professional">
+
+    </div>
+
+    <div id="portfolio">
+
     </div>
   </div>
+  
+  <script>
+    var tabs = new Tabby('[data-tabs]');
+  </script>
+  <script src="./logo.js"></script>
 </body>
 </html>

@@ -1,0 +1,11 @@
+.header img {
+  border-radius: 50%;
+}
+
+/* 
+The list (<ul></ul>) has the [role="tablist"] attribute.
+Tab links (<a href="#anchor"></a>) have the [role="tab"] attribute.
+Active tab links have the [aria-selected="true"] attribute.
+Tab content has the [role="tabpanel"] attribute.
+Hidden tab content has the [hidden] attribute. 
+*/
