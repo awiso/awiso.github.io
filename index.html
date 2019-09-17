@@ -54,12 +54,12 @@
           </p>
           <h6>Hobbies</h6>
           <ul class="hobbies">
-            <li>Figure drawing (charcoal & graphite) </li>
-            <li>Tinkering and Building</li>
-            <li>Travel photography</li>
-            <li>Running (4 half marathons to date 🏅)</li>
-            <li>Reading</li>
-            <li>Certified Austrian Ski Instructor 🇦🇹</li>
+            <li data-tilt class="hobby">Figure drawing (charcoal & graphite) </li>
+            <li data-tilt class="hobby">Tinkering and Building</li>
+            <li data-tilt class="hobby">Travel photography</li>
+            <li data-tilt class="hobby">Running (4 half marathons to date 🏅)</li>
+            <li data-tilt class="hobby">Reading</li>
+            <li data-tilt class="hobby">Certified Austrian Ski Instructor 🇦🇹</li>
           </ul>
           <br>
           <br>
@@ -200,6 +200,12 @@
       <script>
         $('#logo').tilt({
           scale: 1.2
+        })
+
+        $('.hobby').tilt({
+          maxTilt: 0,
+          scale: 1.1,
+          disableAxis: 'y'
         })
       </script>
     </body>
