@@ -80,9 +80,7 @@ body {
 }
 
 a:hover {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
+  text-decoration: none;  color: rgb(58, 104, 173);
 }
 
 .card {
